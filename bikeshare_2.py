@@ -148,7 +148,7 @@ def filter_summary(city, month, day, init_total_rides, df):
     num_stations_start = len(df['Start Station'].unique())
     num_stations_end = len(df['End Station'].unique())
 
-    print('  Gathering statistics for:      ', city)
+    print('  Gathering statistics:      ', city)
     print('    Filters (month, day):        ', month, ', ', day)
     print('    Total rides in dataset:      ', init_total_rides)
     print('    Rides in filtered set:       ', filtered_rides)
@@ -183,7 +183,7 @@ def load_data(city, month, day):
     df['hour'] = df['Start Time'].dt.hour                   # range (0-23)
 
     init_total_rides = len(df)
-    filtered_rides = init_total_rides    # initially
+    filter_rides = init_total_rides    # initially
 
     # filter by month if applicable
     if month != 'all':
