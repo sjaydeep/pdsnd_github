@@ -2,6 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 
+#here is main python file of this project.
 CITY_DATA = { 'chicago': 'data\\chicago.csv',
               'new york city': 'data\\new_york_city.csv',
               'washington': 'data\washington.csv' }
@@ -12,7 +13,7 @@ WEEKDAYS = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 
 
 LINE_LEN = 90
 
-# print long string with repeating char, used to separate sections of output
+# print long string with repeating character, used to separate sections of output
 print_line = lambda char: print(char[0] * LINE_LEN)
 
 def print_processing_time(start_time):
